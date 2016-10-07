@@ -2,7 +2,8 @@ from pyrsistent import pvector
 from toolz import pipe
 from toolz.curried import reduce, map
 from toolz.dicttoolz import iterkeys, itervalues
-from modules.value_objects.src.string_value_object import StringValueObject
+
+from lib.value_objects.src.string_value_object import StringValueObject
 
 __WHITESPACE = StringValueObject(" ")
 __VERTICAL_SEPARATOR = StringValueObject("|")

@@ -1,4 +1,4 @@
-from modules.value_objects.src.value_object import ValueObject
+from lib.value_objects.src.value_object import ValueObject
 
 
 class StringValueObject(ValueObject):

@@ -1,5 +1,6 @@
 import unittest
-from modules.value_objects.src.string_value_object import StringValueObject
+
+from lib.value_objects.src.string_value_object import StringValueObject
 
 
 class StringValueObjectTest(unittest.TestCase):
