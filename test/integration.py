@@ -3,8 +3,8 @@ import unittest
 from pyrsistent import pmap
 
 from lib.formatter.src._formatter import format_dict_as_grid
-from src.confusion_table.src._confusion_table import ConfusionTable
-from src.confusion_table.src._confusion_table_generator import generate_confusion_table
+from modules.confusion_table.src._confusion_table import ConfusionTable
+from modules.confusion_table.src._confusion_table_generator import generate_confusion_table
 
 
 class IntegrationTest(unittest.TestCase):
