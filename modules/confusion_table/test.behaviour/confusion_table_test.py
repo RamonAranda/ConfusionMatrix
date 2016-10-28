@@ -4,7 +4,7 @@ import mock
 from confusion_table.src._confusion_table import ConfusionTable
 
 
-class ConfusionTableBehaviourTest(unittest.TestCase):
+class ConfusionTableTest(unittest.TestCase):
 
     def setUp(self):
         self.label_1 = "a"
@@ -38,6 +38,6 @@ class ConfusionTableBehaviourTest(unittest.TestCase):
         self.failUnlessEqual(self.ct.DOR, 1)
 
     @mock.patch('confusion_table.src._confusion_table.ConfusionTable.__str__', return_value='potato')
-    def test_confusion_table_str(self, _):
+    def test_confusion_table_str(self, mocked_str):
         assert self.ct.__str__() == 'potato'
-
+        print mocked_str.call_count
