@@ -1,4 +1,4 @@
-from src.confusion_table.src._confusion_table import ConfusionTable
+from modules.confusion_table.src._confusion_table import ConfusionTable
 
 
 def generate_confusion_table(predicted_values, label, formatter):

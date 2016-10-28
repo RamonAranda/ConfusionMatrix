@@ -3,7 +3,7 @@ from toolz import pipe, curry, partial
 from toolz.curried import map, filter
 from toolz.dicttoolz import iterkeys, zip, merge
 
-from src.confusion_matrix.src._confusion_matrix import ConfusionMatrix
+from modules.confusion_matrix.src._confusion_matrix import ConfusionMatrix
 
 
 def generate_confusion_matrix(confusion_table_generator, formatter, expected, predicted, labels=None):

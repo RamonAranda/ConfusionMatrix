@@ -12,8 +12,8 @@ class ConfusionMatrix(object):
         self.__predictions_dict = pmap(predictions_dict)
         self.__format_function = format_fn
 
-    def __calculate_average(self, f):
-        return np.mean(list(map(f, self.__confusion_tables.values())))
+    def __calculate_average(self, fn):
+        return np.mean(list(map(fn, self.__confusion_tables.values())))
 
     @property
     def average_accuracy(self):
